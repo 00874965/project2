@@ -1,0 +1,19 @@
+<!-- Display Newsitems -->
+<div ng-init="getNewsitems()">
+  <h2><span class="glyphicon glyphicon-pencil"></span>  Latest news from around the GD World</h2>
+    <a href="#/newsitems/add" class="btn btn-info" role="button">Add Article</a>
+    </div>
+     <div class="row">
+      <div ng-repeat="newsitem in newsitems">
+        <div class= "col-md-6">
+          <h4>{{newsitem.newsitemTitle}} test</h4>
+           </p><h7>{{newsitem.newsitemDescription}}</h7></p>
+            </p><h8>Author: {{newsitem.newsitemAuthor}}</h8> </p>
+             </p><h8>Post Date: {{newsitem.create_date}}</h8> </p>
+          </p><a href="{{newsitem.newsitemURL}}">Link to Article</a></p>
+        <div class="pull-right">
+          <a href="#/newsitems/edit/{{newsitem._id}}">Edit</a> |  <a href="#" ng-click="removeNewsitem(newsitem._id)">Delete</a>
+        </div>
+          </div>
+      </div>
+    </div>

@@ -1,0 +1,26 @@
+<a href="#/patients">Back to Patients</a>
+<div class="panel panel-default" ng-init="getPatient()">
+  <div class="panel-heading">
+    <h3 class="panel-title">{{ patient.patient_fname }} {{ patient.patient_lname }}, Patient Id: {{ patient.patient_no }}, Patient Readings Record: {{ patient.readings_no }}: <a href="#/readings" class="btn" role="button">View Blood Sugar Recordings</a></h3>  
+  </div>
+  <div class="panel-body">
+    <div class="row">
+       <div class="col-md-8">
+        </p>{{recipe.description}}</p>
+        <ul class="list-group">
+            <li class="list-group-item">Patient Record No: {{ patient.patient_no }}</li>
+            <li class="list-group-item">Patient Name: {{ patient.patient_fname }} {{ patient.patient_lname }}</li>
+            <li class="list-group-item">Patient Address: {{ patient.patient_address }}</li>
+            <li class="list-group-item">Patient Age: {{ patient.patient_age }}</li>
+            <li class="list-group-item">Patient Due Date: {{ patient.patient_duedate }}</li>
+            <li class="list-group-item">Pregnancy Number: {{ patient.patient_pregnancy_no}}</li>
+            <li class="list-group-item">Blood Sugar Readings Record: {{ patient.readings_no }}</li>
+            <li class="list-group-item">Patient Created Record Date: {{ patient.create_date }}</li>
+          </ul>
+       </div>
+    </div>
+  </div>
+</div>
+<div class="pull-right">
+    <a href="#/patients/edit/{{patient._id}}">Edit</a> |  <a href="#" ng-click="removePatient(patient._id)">Delete</a>
+</div>

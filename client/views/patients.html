@@ -1,0 +1,21 @@
+ <h2>Patient Records</h2>
+    </div>
+    <a href="#/patients/add" class="btn btn-info" role="button">Add Patient</a>
+    <div class="panel panel-default" ng-init="getPatients()">
+  <div class="panel-heading">
+    <p>Endocryology Dept; Gestational Diabetes Patient Records: Medical Practise Reg. No. 23RT454</p>
+  </div>
+<center><table>
+    <th>Patient Rec No<br> <input type="text" ng-model="search.patient_no"> </th>
+    <th>Patient First Name<br> <input type="text" ng-model="search.patient_fname"></th>
+    <th>Patient Last Name<br> <input type="text" ng-model="search.patient_lname"></th>
+    <th>Delivery Due Date <br> <input type="text" ng-model="search.patient_address"></th>
+    <th></th>
+  <tr ng-repeat="patient in patients | filter:search">
+    <td>{{ patient.patient_no }}</td>
+    <td>{{ patient.patient_fname }}</td>
+    <td>{{ patient.patient_lname }}</td>
+    <td>{{ patient.patient_address }}</td>
+    <td><a class="btn btn-small" href="#/patients/details/{{patient._id}}">View Patient Record</a></td>
+  </tr>
+</table></center>

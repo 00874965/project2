@@ -1,0 +1,17 @@
+<div ng-init="getRecipes()">
+    <h2><span class="glyphicon glyphicon-grain"></span>  Latest tried and tested Recipes</h2>
+     </div>
+     <a href="#/recipes/add" class="btn btn-info" role="button">Add Recipe</a>
+      <div class="row">
+    	<div ng-repeat="recipe in recipes">
+    		<div class="col-md-4">
+    			<h4>{{recipe.name}}</h4>
+    				<p>{{recipe.description}}</p>
+    				<h5>Blood Sugar Level average:{{recipe.avg_blood_sugar_level}}</h5>
+    	               <a class="btn btn-primary btn-xs" href="#/recipes/details/{{recipe._id}}">View Recipe</a>
+    		          <div class="col-md-6">
+    				<img class="thumbnail" style="width:150px;height:150px" src="{{recipe.image}}">
+    			</div>
+    		</div>
+    	</div>
+    </div>

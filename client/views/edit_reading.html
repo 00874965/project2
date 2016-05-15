@@ -1,0 +1,48 @@
+<a href="#/readings">Back to Readings</a>
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Edit Reading</h3>
+  </div>
+   <div class="panel-body">
+    <div class="row">
+      <div class="col-md-12">
+      <form ng-submit="updateReading()" ng-init="getReading()">
+        <label>Day</label>
+          <select ng-model="reading.reading_day" class="form-control">
+            <option value="Monday">Monday</option>
+            <option value="Tuesday">Tuesday</option>
+            <option value="Wednesday">Wednesday</option>
+            <option value="Thursday">Thursday</option>
+            <option value="Friday">Friday</option>
+            <option value="Saturday">Saturday</option>
+            <option value="Sunday">Sunday</option>
+          </select>
+         <div class="form-group">
+          <label>Date</label>
+          <input type="text" class="form-control" ng-model="reading.reading_date" placeholder="Date">
+        </div>
+        <label>Meal Time</label>
+          <select ng-model="reading.reading_meal" class="form-control">
+            <option value="Morning">Morning</option>
+            <option value="Post Breakfast">Post Breakfast</option>
+            <option value="Pre Lunch">Pre Lunch</option>
+            <option value="Post Lunch">Post Lunch</option>
+            <option value="Pre Dinner">Pre Dinner</option>
+            <option value="Post Dinner">Post Dinner</option>
+            <option value="Bed Time">Bed Time</option>
+          </select>
+     
+         <div class="form-group">
+          <label>Recording Time</label>
+          <input type="text" class="form-control" ng-model="reading.reading_time" placeholder="Time">
+        </div>
+         <div class="form-group">
+          <label>Blood Sugar Level</label>
+          <input type="text" class="form-control" ng-model="reading.reading_level" placeholder="Level">
+        </div>
+           <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+    </div>
+    </div>
+  </div>
+</div>

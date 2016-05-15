@@ -1,0 +1,60 @@
+<a href="#/readings">Back to Readings</a>
+
+<div><h2> Record your Daily Blood Sugar readings here  <span class="glyphicon glyphicon-tint"></span></h2></div>
+    <h4>Readings should geneally be done at the following times & within the Ranges shown: </h4>
+    <li>First thing in the morning - < 5.0</li>
+    <li>One hour after Breakfast - < 7.0</li>
+    <li>One hour before Lunch - < 5.0</li>
+    <li>One hour after lunch - < 7.0</li>
+    <li>One hour before Dinner - < 5.0</li>
+    <li>One hour after Dinner - < 7.0</li>
+    <li>Before Bed - < 5.0</li>
+    <br></br>
+    <!-- Add Reading -->
+<div class="container" >
+  <div class="row">
+    <div class="col-sm-4 col">
+      <h3>Add new Reading</h3> 
+      <form ng-submit="addReading()">
+         <div class="form-group" ng-model="reading.reading_day" placeholder="">
+          <label>Day</label>
+          <select ng-model="reading.reading_day" class="form-control">
+            <option value="Monday">Monday</option>
+            <option value="Tuesday">Tuesday</option>
+            <option value="Wednesday">Wednesday</option>
+            <option value="Thursday">Thursday</option>
+            <option value="Friday">Friday</option>
+            <option value="Saturday">Saturday</option>
+            <option value="Sunday">Sunday</option>
+          </select>
+        </div>
+      <div class="form-group">
+          <label for="Date">Date</label>
+          <input type="text" class="form-control" ng-model="reading.reading_date" placeholder="">
+      </div>
+         <div class="form-group" ng-model="reading.reading_meal" placeholder="">
+          <label>Meal Time</label>
+          <select ng-model="reading.reading_meal" class="form-control">
+            <option value="Morning">Morning</option>
+            <option value="Post Breakfast">Post Breakfast</option>
+            <option value="Pre Lunch">Pre Lunch</option>
+            <option value="Post Lunch">Post Lunch</option>
+            <option value="Pre Dinner">Pre Dinner</option>
+            <option value="Post Dinner">Post Dinner</option>
+            <option value="Bed Time">Bed Time</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="Recording Time">Recording Time</label>
+          <input type="text" class="form-control" ng-model="reading.reading_time" placeholder="">
+      </div>
+      <div class="form-group">
+          <label for="Blood Sugar Level">Blood Sugar Level</label>
+          <input type="text" class="form-control" ng-model="reading.reading_level" placeholder="">
+      </div>
+      <input type="submit" class="btn btn-primary"  value="Submit Form">
+    </form>
+  </div>
+  </div>
+</div>
+

@@ -1,0 +1,26 @@
+<a href="#/recipes">Back to Recipes</a>
+<div class="panel panel-default" ng-init="getRecipe()">
+  <div class="panel-heading">
+    <h3 class="panel-title">{{recipe.name}}</h3>
+  </div>
+  <div class="panel-body">
+    <div class="row">
+      <div class="col-md-4">
+        <img src="{{recipe.image}}" style="width:200px;height:200px">
+      </div>
+      <div class="col-md-6">
+        <h4>{{recipe.description}}<h4>
+        <h5>Blood Sugar Level average: {{recipe.avg_blood_sugar_level}} - of 35 members</h5>
+        <ul class="list-group">
+          <li class="list-group-item">Primary Ingredient: {{recipe.mainingrediant}}</li>
+          <li class="list-group-item">Other Ingredients: {{recipe.otheringrediant}}</li>
+          <li class="list-group-item">Prep Time: {{recipe.preptime}}</li>
+          <li class="list-group-item">Method: {{recipe.method}}</li>
+          </ul>
+       </div>
+    </div>
+  </div>
+</div>
+<div class="pull-right">
+  <a href="#/recipes/edit/{{recipe._id}}">Edit</a> |  <a href="#" ng-click="removeRecipe(recipe._id)">Delete</a>
+  </div>
