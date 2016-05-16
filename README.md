@@ -112,7 +112,7 @@ Assignment 1 took care of the AngularJS front end - This Assignment integrates M
 
 
 [image1]: ./DataModel.PNG
-[image2]: ./AppDesign.PNG
+[image2]: ./AppDesign.png
 [image3]: ./AppDesignPackage.PNG
 [image4]: ./RestClient_Testing_API_GET.PNG
 [image5]: ./LocalHost_Testing_API_GET.png
