@@ -1,6 +1,7 @@
 # Assignment 2 - web API for Assignment 1 using Node, Express, MongoDB, Mongoose.
 
 This project was created from scratch with Node, Express, MongoDB, Mongoose & AngularJS .. (versus Assignment 1 whch was developed using Yeoman - angular generator).
+##### Target Grading Spectrum Range per Spec: Good(50-60) - Good Node.js API design and associated modeling(Mongoose), integrated with Angular application allowing full manipulation of resources(Create/read/update delete).
 
 ## Getting Started
 
